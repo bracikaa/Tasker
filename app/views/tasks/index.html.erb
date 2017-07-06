@@ -1,0 +1,9 @@
+<h1> Placeholder </h1>
+
+<% @tasks.each do |task| %>
+	<h2><%= link_to task.title, task %></h2>
+	<p><%= task.description %></p> 
+<% end %>
+
+<%= link_to "Create a new Task!", new_task_path %>
+
