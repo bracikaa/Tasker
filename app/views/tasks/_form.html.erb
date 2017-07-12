@@ -1,5 +1,5 @@
 <%= simple_form_for @task do |f| %>
 	<%= f.input :title, label: "Task Title" %>
 	<%= f.input :description, label: "Task Description" %>
-	<%= f.button :submit, "Add New Task!" %>
+	<%= f.button :submit, name: "Add New Task!" %>
 <% end %>
